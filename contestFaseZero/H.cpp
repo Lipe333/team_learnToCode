@@ -17,6 +17,8 @@ bool ehPrimo(ll n){
   return true;
 }
 
+/* 
+  * Solução que não passa
 void solve(ll n){
   
   set<tuple<ll,ll,ll>> s;
@@ -35,6 +37,27 @@ void solve(ll n){
     cout << -1 << endl;
   else
     cout << get<1>(t) << " " << get<2>(t) << endl;
+} */
+
+// Solução que passa
+void solve(ll n){
+
+  ll best_x=-1, best_y=-1, best_diff=10e9;
+  int x=n/2, y=(n+1)/2, i,j;
+
+  while(x>=0 && y<=n){
+    //cout << x << " " << y << endl;
+    if(!ehPrimo(x) && !ehPrimo(y) && x+y==n && abs(x-y)<best_diff){
+      best_diff = abs(x-y);
+      best_x = x;
+      best_y = y;
+    }
+    x--;
+    y++;
+  
+  }
+
+  cout << best_x << " " << best_y << endl;
 }
 
 int main(){ _

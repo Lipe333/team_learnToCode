@@ -57,7 +57,12 @@ void solve(ll n){
   
   }
 
-  cout << best_x << " " << best_y << endl;
+  if (best_x == -1 || best_y == -1) {
+    cout << -1 << endl;
+  } else {
+    cout << best_x << " " << best_y << endl;
+  }
+  
 }
 
 int main(){ _

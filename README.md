@@ -9,3 +9,6 @@
 7. Reduzirás o branching factor da DFS.
 8. Farás todos os cortes possíveis em uma DFS.
 9. Tomarás cuidado com pontos coincidentes e com pontos colineares.
+
+
+J#*M~ZnX6[Kz!!X976.z2&f2kR[28[o;
